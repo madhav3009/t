@@ -5,7 +5,6 @@ const {client} = require('./connect.js')
 
 app.use(express.json());
 
-
 app.get('/posts', async (req, res) => {
   try {
     // Simple query to check DB connection
@@ -28,7 +27,6 @@ app.get('/posts', async (req, res) => {
     });
   }
 });
-
 
 
 app.use(express.json()); // Make sure body parser is enabled

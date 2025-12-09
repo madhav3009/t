@@ -47,7 +47,7 @@ app.post('/posts', async (req, res) => {
       post: result.rows[0]
     });
   } catch (error) {
-    console.error("DB query failed::", error.message);
+    console.error("DB query failed:", error.message);
 
     res.status(500).json({
       status: 'error',
